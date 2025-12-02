@@ -1,0 +1,349 @@
+---
+title: "The effects of ocean warming and acidification on the growth of commercially important shellfish species"
+author: "Olivia Boyan"
+format: html
+bibliography: references.bib
+---
+
+# Introduction
+
+Shellfish, or bivalves, are important species ecologically and commercially. Shellfish are filter feeders which means they obtain food by filtering particles and plankton from the water column [@vaughn2018]. This action of filtering removes particles from the water column which cleans the water providing an ecosystem service by improving water quality [@coen2007; @vaughn2018]. Filtration from shellfish also provide nutrient remediation services by removing nitrogen and phosphorus from the water which can provide other marine organisms that use shellfish reefs as habitat with benefits [@vanderschatteolivier2020]. Shellfish are also economically important as they are a popular food source. In 2022, 13,943,751 pounds of shellfish were grown in aquaculture in the Northeastern United States with a value of \$133,100,988 [@fisheries2025].
+
+As filter feeders, shellfish can consume unfavorable prey items including toxin-producing algae [@rourke2022]. The consumption of such algae can result in the accumulation of phycotoxins in shellfish tissue [@rourke2022]. Toxins produced by these algae such as paralytic shellfish poisons (PSP) and domoic acid (DA) can be harmful to human health if consumed [@shumway1990; @grattan2016; @rourke2022a]. Shellfish are generally classified as filter feeders, however, there have been observed differences in phycotoxin accumulation between species as a result of species-species differences in clearance rates and particle selectivity [@mafra2010]. An example of this includes oysters which have been found to have higher particle selectivity and lower clearance rates compared to other bivalves which means they are able to select particles of a desired size and type as well as ingest fewer particles from the water column [@mafra2010]. Other bivalves, including mussels and scallops, have been found to be less selective in what they consume [@sauvey; @rourke2022; @mafra2010; @hégaret2008]. Understanding the realtionship between species-species feeding behaviors and toxin accumulation is important for managing risks associated with human health and improving the sustainability of the shellfish industry.
+
+Understanding these differences is important as harmful algal blooms (HABs) increase in duration and intensity along with the elevated effects of ocean warming and acidification, particularly in the Gulf of Maine (GoME) which is changing faster than other bodies of water [@anderson2014; @gobler2017; @seto2019; @brickman2021; @pershing2015; @siedlecki2021]. HABs involve an abundance of multiple species of algae that produce toxins or bioactive compounds which often cause the closures of shellfish harvesting to manage the risk of toxin consumption from humans [@anderson2014; @anderson2021; @fernandes-salvador2021; @davidson2016; @grizzle2016]. Toxin level monitoring is often based on mussels as the ideal species since they accumulate toxins quickly, providing early detection of HABs [@rourke2022; @bricelj1998]. While mussels are a good indicator of toxin levels, they may not be appropriate to assume the toxin levels found in other bivalve species as toxin accumulation can vary between species under current environmental conditions by up to 100-fold [@mafra2010; @rourke2022; @sauvey]. Understanding these species-species differences in toxin accumulation can provide information on how to monitor the locations from which each shellfish species is harvested from rather than applying toxin monitoring from mussels to all shellfish species.
+
+In addition to HABs, the metabolic rates of shellfish can also be affected by ocean warming and acidification [@crain2008; @kordas2011; @kroeker2013; @lefevre2016; @braga2018]. Increased temperatures from ocean warming can cause these shellfish to have a higher metabolic demand leading to changes in clearance rates, particle selectivity, growth rate, and detoxification processes [@anestis2007; @oconnor2009; @todgham2013; @gunderson2016; @lowe2017]. Coastal acidification can also affect the metabolic rates of shellfish by altering acid base physiology and energy demands [@portner2004; @widdicombe2008; @salisbury2011]. Based on this information, predicted future water conditions are likely to cause significant impacts on feeding selectivity and toxin uptake of commercially important shellfish species [@braga2018].
+
+To understand and predict the impact of these future water conditions on the shellfish industry in New Hampshire, it is necessary to research the effects of coastal stressors on the feeding behavior, food selectivity, and phycotoxin accumulation processes in commercially important bivalve species. This research was conducted to recognize how species are impacted by predicted changes in water conditions as well as to support the mitigation of negative impacts from HABs on the shellfish industry through the development of management strategies.
+
+This paper looks at how predicted water temperatures and acidification levels affect metabolic rates, specifically growth, in commercially important shellfish species as part of the overall goal of this research. It is hypothesized that shellfish subjected to either increased temperatures, ocean acidification conditions, or a combination of both, will show less growth than individuals subjected to current summer ambient conditions in New Hampshire. It is also hypothesized that shellfish growth will differ between species.
+
+# Methods
+
+### Experimental Design
+
+This experiment was conducted at the University of New Hampshire's Coastal Marine Lab which has a system of aquaria that allows for precise control over partial pressure carbon dioxide (pCO2) and temperature. This system consists of 20 tanks that can be controlled individually to replicate experimental water conditions. For this experiment, four water condition treatments were randomly selected for each tank so that there were five tanks of each treatment in the system @fig-Tank-assignment. These treatments included ambient which was set to the ambient summer conditions of the area (17 degrees C, pH 8.0), ocean warming which was set to four degrees above ambient and pH 8.0 (21 degrees C, pH 8.0), ocean acidification which was set to ambient temperatures and pH 7.5 (17 degrees C, pH 7.5), and multi-stressor which was set to ocean warming temperatures and ocean acidification pH (21 degrees C, pH 7.5). Each tank was split into nine boxes and each box could hold four individuals from the same species. Each column of boxes was randomly designated a species @fig-Tank-setup. These species included Eastern oysters (*Crassostrea virginica*), Blue mussels (*Mytilus edulis*), and Atlantic sea scallops (*Placopecten magellanicus*).
+
+```{r}
+#| echo: false 
+#| warning: false 
+#| label: fig-Tank-assignment 
+#| fig-cap: "Assignment of treatment conditions (Ambient, Warm, Acidification, Multi) for each of the 20 tanks in the system. (Photo: Hannah Gossner)"
+#| out.width: "80%"   
+
+library(knitr)  
+
+include_graphics("C:/Users/Liv/OneDrive - USNH/Desktop/BIOL 806 Data Science/Biotoxin Data/Olivia-Data-Science-Final-Project/images/Tank_Layout_Full.png")
+```
+
+```{r}
+#| echo: false 
+#| warning: false 
+#| label: fig-Tank-setup 
+#| fig-cap: "Layout of each tank with the nine boxes. Each box was able to hold four individuals. Each column, designated from where the drain is, was randomized for which species they would hold."  
+#| out.width: "80%"  
+
+include_graphics("C:/Users/Liv/OneDrive - USNH/Desktop/BIOL 806 Data Science/Biotoxin Data/Olivia-Data-Science-Final-Project/images/Tank_Setup_2.png")
+```
+
+Shellfish were collected from local farms to have 240 individuals of each species. These individuals were measured for length (mm), width (mm), and depth (mm) and weighed (g). Once measured they were placed in their designated tank spaces. Once all shellfish were in their tank spaces, they were subjected to an acclimation period of two weeks with no experimental conditions to adjust to living in the tanks. After that they were subjected to an environmental acclimation period of 28 days with treatment conditions. The shellfish were then subject to a selective feeding period of 6 days and then a depuration period of 10 days where on days 1, 3, 6 and 10 shellfish were removed from tanks to have their tissues collected. On these days the shellfish were measured and weighed wet before tissue sampling. All shellfish measurement and weight data was collected onto an Excel csv file.
+
+### Data Cleaning and Analysis
+
+The measurement and weight data was cleaned and analyzed using R Studio (ADD R CITATION). The measurement and weight Excel file was loaded into R Studio using the readxl package [@readxl]. Unnecessary columns and data with "NA"s were removed using the dplyr package [@dplyr]. Some of the shellfish died which caused there to be missing data for measurements and weight.
+
+The change in length, width, depth and weight was calculated for each shellfish and added as a column using the dplyr package [@dplyr]. The changes in measurements and weight compared to species and treatments were then graphed as box plots using the ggplot2 package [@ggplot2].
+
+The difference between species compared to the measurements and weights was analyzed through one-way ANOVAs [@stats]. A post-hoc tukey test was calculated for ANOVAs with significant results [@stats]. The difference between treatment compared the measurements and weights was also analyzed through one-way ANOVAs and post-hoc tukey tests [@stats].
+
+# Results
+
+```{r}
+#| include: false
+#| warning: false
+
+#Data Cleaning
+
+#Library
+library(tidyverse)
+library(dplyr)
+library(readxl)
+
+#Load in data
+Shellfish_metadata_mastersheet_10Oct25 <- read_excel("C:/Users/Liv/OneDrive - USNH/Desktop/BIOL 806 Data Science/Biotoxin Data/Olivia-Data-Science-Final-Project/Shellfish metadata mastersheet 10Oct25.xlsx", sheet = "Master Renamed")
+
+View(Shellfish_metadata_mastersheet_10Oct25)
+
+#Cleaning
+Shellfish_metadata_mastersheet_10Oct25 <- Shellfish_metadata_mastersheet_10Oct25 |>
+  select(-...16, -...20, -...21, -Comments, -Tank, -Section, -"Ripe?", -"Dry_Shell_(g)", -BeeTag_ID, -Unique_ID) |> #remove columns
+  filter(if_all(c(`Before_Weight_(g)`, `Before_Length_(mm)`, `Before_Width_(mm)`, `Before_Depth_(mm)`, `After_Weight_(g)`, `After_Length_(mm)`, `After_Width_(mm)`, `After_Depth_(mm)`), ~ !is.na(.x)))
+
+#Calculate change in measurements
+change_measurements <- Shellfish_metadata_mastersheet_10Oct25 |>
+  mutate(weight_change = `After_Weight_(g)` - `Before_Weight_(g)`,
+         width_change = `After_Width_(mm)` - `Before_Width_(mm)`,
+         length_change = `After_Length_(mm)` - `Before_Length_(mm)`,
+         depth_change = `After_Depth_(mm)` - `Before_Depth_(mm)`)
+
+```
+
+The change in shellfish weight (g) was found to have a difference between treatments (F(3, 674) = 2.714, p = 0.044) @fig-weight-treat. This difference in shellfish weight was only apparent between ambient and acidified conditions, where shellfish in ambient conditions had a greater change in weight than shellfish in acidified conditions (p = 0.0586, 95% C.I. = -0.019, 1.58) @fig-weight-treat. Change in shellfish width (mm) was not different between treatments, indicating that change in shellfish width does not correlate with differences in water conditions (F(3, 674) = 1.136, p = 0.334) @fig-width-treat. Change in shellfish length (mm) was also not different between treatments, indicating that change in shellfish length does not correlate with differences in water conditions (F(3, 674) = 1.687, p = 0.168) @fig-length-treat. The change in shellfish depth (mm) was found to have a difference between treatments (F(3, 674) = 2.714, p = 0.044) @fig-depth-treat. This difference in depth was apparent between warm and ambient conditions, where shellfish in ambient conditions had a greater change in depth than shellfish in warm conditions (p = 0.0385, 95% C.I. = -1.46, -0.0269), and between warm and multi conditions, where shellfish in multi conditions had a greater change in depth than shellfish in warm conditions (p = 0.0417, 95% C.I. = -1.44, -0.0185) @fig-depth-treat.
+
+Overall, shellfish weight from ambient conditions changed more than shellfish in acidified conditions while all other treatments showed no variation between each other @fig-weight-treat. Shellfish depth from ambient and multi conditions changed more than shellfish in warm conditions while acidified conditions showed no variation between the other treatments @fig-depth-treat. Change in shellfish width and length did not vary between treatments @fig-width-treat; @fig-length-treat.
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-weight-treat
+#| fig-cap: "Change in shellfish weight (g) showed a difference between treatments (F(3, 674) = 2.714, p = 0.044). Change in shellfish weight was only different between Ambient and Acidified conditions (p = 0.0586, 95% C.I. = -0.019, 1.58)." 
+
+#Boxplot- change in weight across treatments
+ggplot(change_measurements, aes(x = Treatment, y = weight_change, fill = Treatment)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Weight (g)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-width-treat
+#| fig-cap: "Change in shellfish width (mm) was not different between treatments (Acidified, Ambient, Multi, Warm) (F(3, 674) = 1.136, p = 0.334)."
+
+#Boxplot- change in width across treatments
+ggplot(change_measurements, aes(x = Treatment, y = width_change, fill = Treatment)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Width (mm)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-length-treat
+#| fig-cap: "Change in shellfish length (mm) was not different between treatments (Acidified, Ambient, Multi, Warm) (F(3, 674) = 1.687, p = 0.168)."
+
+#Boxplot- change in length across treatments
+ggplot(change_measurements, aes(x = Treatment, y = length_change, fill = Treatment)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Length (mm)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-depth-treat
+#| fig-cap: "Change in shellfish depth (mm) showed a difference between treatments (F(3, 674) = 2.714, p = 0.044). Change in shellfish depth was different between Warm and Ambient conditions (p = 0.0385, 95% C.I. = -1.46, -0.0269) and between Warm and Multi conditions (p = 0.0417, 95% C.I.  = -1.44, -0.0185)."
+
+#Boxplot- change in depth across treatments
+ggplot(change_measurements, aes(x = Treatment, y = depth_change, fill = Treatment)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Depth (mm)"
+  )
+```
+
+The change in shellfish weight (g) was found to have a difference between species (F(2, 675) = 186.9, p = \<2e-16) @fig-weight-species. This difference in weight was apparent between Oysters and Mussels, with Mussels having a greater change in weight than Oysters (p = 1.52e-05, 95% C.I. = -1.47, -0.477), Scallops and Mussels, with Mussels having a greater change in weight than Scallops (p = 0.00e+00, 95% C.I. = -4.56, -3.54), and Scallops and Oysters, with Oysters having a greater change in weight than Scallops (p = 0.00e+00, 95% C.I. = -3.59, -2.56) @fig-weight-species. Change in shellfish width (mm) was found to have a difference between species (F(2, 675) = 78.85, p = \<2e-16) @fig-width-species. This difference in width was apparent between Oysters and Mussels, with Mussels having a greater change in width than Oysters (p = 5e-07, 95% C.I. = -2.32, -0.897), Scallops and Mussels, with Scallops having a greater change in width than Mussels (p = 0.00e+00, 95% C.I. = 1.56, 3.02), and Scallops and Oysters, with Scallops having a greater change in width than Oysters (p = 0.00e+00, 95% C.I. = 3.17, 4.64) @fig-width-species. Change in shellfish length (mm) was not different between species, indicating that change in shellfish length does not correlate with species (Mussels, Oysters, Scallops) (F(2, 675) = 0.627, p = 0.535) @fig-length-species. Change in shellfish depth (mm) was found to have a difference between species (F(2, 675) = 6.182, p = 0.00219) @fig-depth-species. This difference in depth was apparent between Oysters and Mussels, with Oysters having a greater change in depth than Mussels (p = 0.00827, 95% C.I. = 0.15, 1.26) and Scallops and Mussels, with Scallops having a greater change in depth than Mussels (p = 0.00609, 95% C.I. = 0.177, 1.31) @fig-depth-species.
+
+Overall, Mussel weight changed the most after treatments while Scallops had the least amount of change in weight @fig-weight-species. Scallop width changed the most after treatments while Oysters had the least amount of change in width @fig-width-species. Oyster and Scallop depth changed the most after treatments than Mussels @fig-depth-species. Change in shellfish length did not vary between species @fig-length-species.
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-weight-species
+#| fig-cap: "Change in shellfish weight (g) showed a difference between species (F(2, 675) = 186.9, p = <2e-16). Change in shellfish weight was different between Oysters and Mussels (p = 1.52e-05, 95% C.I. = -1.47, -0.477), Scallops and Mussels (p = 0.00e+00, 95% C.I.  = -4.56, -3.54), and Scallops and Oysters (p = 0.00e+00, 95% C.I. = -3.59, -2.56)."
+
+#Boxplot- change in weight across species
+ggplot(change_measurements, aes(x = Species, y = weight_change, fill = Species)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Weight (g)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-width-species
+#| fig-cap: "Change in shellfish width (mm) showed a difference between species (F(2, 675) = 78.85, p = <2e-16). Change in shellfish width was different between Oysters and Mussels (p = 5e-07, 95% C.I. = -2.32, -0.897), Scallops and Mussels (p = 0.00e+00, 95% C.I.  = 1.56, 3.02), and Scallops and Oysters (p = 0.00e+00, 95% C.I. = 3.17, 4.64)."
+
+#Boxplot- change in width across species
+ggplot(change_measurements, aes(x = Species, y = width_change, fill = Species)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Width (mm)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-length-species
+#| fig-cap: "Change in shellfish length (mm) was not different between species (Mussels, Oysters, Scallops) (F(2, 675) = 0.627, p = 0.535)."
+
+#Boxplot- change in length across species
+ggplot(change_measurements, aes(x = Species, y = length_change, fill = Species)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Length (mm)"
+  )
+```
+
+```{r}
+#| echo: false
+#| warning: false
+#| fig-width: 12
+#| fig-height: 6
+#| label: fig-depth-species
+#| fig-cap: "Change in shellfish depth (mm) showed a difference between species (F(2, 675) = 6.182, p = 0.00219). Change in shellfish depth was different between Oysters and Mussels (p = 0.00827, 95% C.I. = 0.15, 1.26) and Scallops and Mussels (p = 0.00609, 95% C.I.  = 0.177, 1.31)."
+
+#Boxplot- change in depth across species
+ggplot(change_measurements, aes(x = Species, y = depth_change, fill = Species)) +
+  geom_boxplot() +
+  theme_classic() +
+  theme(axis.title = element_text(size = 14),
+        axis.text = element_text(size = 14),
+        legend.position = "none") +
+  labs(
+    y = "Depth (mm)"
+  )
+```
+
+```{r}
+#| include: false
+#| warning: false
+
+#Statistical Tests - Change in measurements across treatments
+
+#ANOVA - Change in weight vs treatments
+Weight_t_aov <- aov(weight_change ~ Treatment, data = change_measurements)
+
+summary(Weight_t_aov)
+#significant
+
+#Tukey test - Change in weight vs treatments
+TukeyHSD(Weight_t_aov)
+#Ambient-Acidified = significant
+
+#ANOVA - Change in width vs treatments
+Width_t_aov <- aov(width_change ~ Treatment, data = change_measurements)
+
+summary(Width_t_aov)
+#not significant
+
+#ANOVA - Change in length vs treatments
+Length_t_aov <- aov(length_change ~ Treatment, data = change_measurements)
+
+summary(Length_t_aov)
+#not significant
+
+#ANOVA - Change in depth vs treatments
+Depth_t_aov <- aov(depth_change ~ Treatment, data = change_measurements)
+
+summary(Depth_t_aov)
+#significant
+
+#Tukey test - Change in depth vs treatments
+TukeyHSD(Depth_t_aov)
+#Warm-Ambient = significant
+#Warm-Multi = significant
+
+```
+
+```{r}
+#| include: false
+#| warning: false
+
+#Statistical Tests - Change in measurements across species
+
+#ANOVA - Change in weight vs species
+Weight_s_aov <- aov(weight_change ~ Species, data = change_measurements)
+
+summary(Weight_s_aov)
+#significant
+
+#Tukey test - Change in weight vs species
+TukeyHSD(Weight_s_aov)
+#Oyster-Mussel = significant
+#Scallop-Mussel = significant
+#Scallop-Oyster = significant
+
+#ANOVA - Change in width vs species
+Width_s_aov <- aov(width_change ~ Species, data = change_measurements)
+
+summary(Width_s_aov)
+#significant
+
+#Tukey test - Change in width vs species
+TukeyHSD(Width_s_aov)
+#Oyster-Mussel = significant
+#Scallop-Mussel = significant
+#Scallop-Oyster = significant
+
+#ANOVA - Change in length vs species
+Length_s_aov <- aov(length_change ~ Species, data = change_measurements)
+
+summary(Length_s_aov)
+#not significant
+
+#ANOVA - Change in depth vs species
+Depth_s_aov <- aov(depth_change ~ Species, data = change_measurements)
+
+summary(Depth_s_aov)
+#significant
+
+#Tukey test - Change in depth vs species
+TukeyHSD(Depth_s_aov)
+#Oyster-Mussel = significant
+#Scallop-Mussel = significant
+```
+
+# References
