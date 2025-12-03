@@ -1,4 +1,4 @@
-This file explains how I cleaned, graphed, and analyzed the data
+This explains how I cleaned, graphed, and analyzed the data
 
 ##Data Cleaning
 
@@ -28,6 +28,7 @@ change_measurements <- Shellfish_metadata_mastersheet_10Oct25 |>
 ggplot(change_measurements, aes(x = Treatment, y = weight_change, fill = Treatment)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("orange", "turquoise", "greenyellow", "orchid1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -39,6 +40,7 @@ ggplot(change_measurements, aes(x = Treatment, y = weight_change, fill = Treatme
 ggplot(change_measurements, aes(x = Treatment, y = width_change, fill = Treatment)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("orange", "turquoise", "greenyellow", "orchid1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -50,6 +52,7 @@ ggplot(change_measurements, aes(x = Treatment, y = width_change, fill = Treatmen
 ggplot(change_measurements, aes(x = Treatment, y = length_change, fill = Treatment)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("orange", "turquoise", "greenyellow", "orchid1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -61,6 +64,7 @@ ggplot(change_measurements, aes(x = Treatment, y = length_change, fill = Treatme
 ggplot(change_measurements, aes(x = Treatment, y = depth_change, fill = Treatment)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("orange", "turquoise", "greenyellow", "orchid1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -72,6 +76,7 @@ ggplot(change_measurements, aes(x = Treatment, y = depth_change, fill = Treatmen
 ggplot(change_measurements, aes(x = Species, y = weight_change, fill = Species)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("steelblue1", "yellow", "rosybrown1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -83,6 +88,7 @@ ggplot(change_measurements, aes(x = Species, y = weight_change, fill = Species))
 ggplot(change_measurements, aes(x = Species, y = width_change, fill = Species)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("steelblue1", "yellow", "rosybrown1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -94,6 +100,7 @@ ggplot(change_measurements, aes(x = Species, y = width_change, fill = Species)) 
 ggplot(change_measurements, aes(x = Species, y = length_change, fill = Species)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("steelblue1", "yellow", "rosybrown1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
@@ -105,6 +112,7 @@ ggplot(change_measurements, aes(x = Species, y = length_change, fill = Species))
 ggplot(change_measurements, aes(x = Species, y = depth_change, fill = Species)) +
   geom_boxplot() +
   theme_classic() +
+  scale_fill_manual(values = c("steelblue1", "yellow", "rosybrown1")) +
   theme(axis.title = element_text(size = 14),
         axis.text = element_text(size = 14),
         legend.position = "none") +
