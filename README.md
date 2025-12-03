@@ -1,4 +1,4 @@
-This file explains how I cleaned, graphed, and analyzed the data
+This explains how I cleaned, graphed, and analyzed the data
 
 ##Data Cleaning
 
