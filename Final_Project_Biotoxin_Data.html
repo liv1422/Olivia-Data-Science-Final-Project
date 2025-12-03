@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Olivia Boyan">
+
+<title>The effects of ocean warming and acidification on the growth of commercially important shellfish species</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="Final_Project_Biotoxin_Data_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Final_Project_Biotoxin_Data_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="Final_Project_Biotoxin_Data_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="Final_Project_Biotoxin_Data_files/libs/quarto-html/popper.min.js"></script>
+<script src="Final_Project_Biotoxin_Data_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Final_Project_Biotoxin_Data_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Final_Project_Biotoxin_Data_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Final_Project_Biotoxin_Data_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Final_Project_Biotoxin_Data_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Final_Project_Biotoxin_Data_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Final_Project_Biotoxin_Data_files/libs/bootstrap/bootstrap-bb462d781dde1847d9e3ccf7736099dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The effects of ocean warming and acidification on the growth of commercially important shellfish species</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Olivia Boyan </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Shellfish, or bivalves, are important species ecologically and commercially. Shellfish are filter feeders which means they obtain food by filtering particles and plankton from the water column <span class="citation" data-cites="vaughn2018">(<a href="#ref-vaughn2018" role="doc-biblioref">Vaughn and Hoellein 2018</a>)</span>. This action of filtering removes particles from the water column which cleans the water providing an ecosystem service by improving water quality <span class="citation" data-cites="coen2007 vaughn2018">(<a href="#ref-coen2007" role="doc-biblioref">Coen et al. 2007</a>; <a href="#ref-vaughn2018" role="doc-biblioref">Vaughn and Hoellein 2018</a>)</span>. Filtration from shellfish also provide nutrient remediation services by removing nitrogen and phosphorus from the water which can provide other marine organisms that use shellfish reefs as habitat with benefits <span class="citation" data-cites="vanderschatteolivier2020">(<a href="#ref-vanderschatteolivier2020" role="doc-biblioref">Schatte Olivier et al. 2020</a>)</span>. Shellfish are also economically important as they are a popular food source. In 2022, 13,943,751 pounds of shellfish were grown in aquaculture in the Northeastern United States with a value of $133,100,988 <span class="citation" data-cites="fisheries2025">(<a href="#ref-fisheries2025" role="doc-biblioref">Fisheries 2025</a>)</span>.</p>
+<p>As filter feeders, shellfish can consume unfavorable prey items including toxin-producing algae <span class="citation" data-cites="rourke2022">(<a href="#ref-rourke2022" role="doc-biblioref">Rourke et al. 2022</a>)</span>. The consumption of such algae can result in the accumulation of phycotoxins in shellfish tissue <span class="citation" data-cites="rourke2022">(<a href="#ref-rourke2022" role="doc-biblioref">Rourke et al. 2022</a>)</span>. Toxins produced by these algae such as paralytic shellfish poisons (PSP) and domoic acid (DA) can be harmful to human health if consumed <span class="citation" data-cites="shumway1990 grattan2016 rourke2022">(<a href="#ref-shumway1990" role="doc-biblioref">Shumway 1990</a>; <a href="#ref-grattan2016" role="doc-biblioref">Grattan, Holobaugh, and Morris 2016</a>; <a href="#ref-rourke2022" role="doc-biblioref">Rourke et al. 2022</a>)</span>. Shellfish are generally classified as filter feeders, however, there have been observed differences in phycotoxin accumulation between species as a result of species-species differences in clearance rates and particle selectivity <span class="citation" data-cites="mafra2010">(<a href="#ref-mafra2010" role="doc-biblioref">Mafra, Bricelj, and Fennel 2010</a>)</span>. An example of this includes oysters which have been found to have higher particle selectivity and lower clearance rates compared to other bivalves which means they are able to select particles of a desired size and type as well as ingest fewer particles from the water column <span class="citation" data-cites="mafra2010">(<a href="#ref-mafra2010" role="doc-biblioref">Mafra, Bricelj, and Fennel 2010</a>)</span>. Other bivalves, including mussels and scallops, have been found to be less selective in what they consume <span class="citation" data-cites="sauvey rourke2022 mafra2010 hégaret2008">(<a href="#ref-sauvey" role="doc-biblioref">Sauvey et al., n.d.</a>; <a href="#ref-rourke2022" role="doc-biblioref">Rourke et al. 2022</a>; <a href="#ref-mafra2010" role="doc-biblioref">Mafra, Bricelj, and Fennel 2010</a>; <a href="#ref-hégaret2008" role="doc-biblioref">Hégaret et al. 2008</a>)</span>. Understanding the relationship between species-species feeding behaviors and toxin accumulation is important for managing risks associated with human health and improving the sustainability of the shellfish industry.</p>
+<p>Understanding these differences is important as harmful algal blooms (HABs) increase in duration and intensity along with the elevated effects of ocean warming and acidification, particularly in the Gulf of Maine (GoME) which is changing faster than other bodies of water <span class="citation" data-cites="anderson2014 gobler2017 seto2019 brickman2021 pershing2015 siedlecki2021">(<a href="#ref-anderson2014" role="doc-biblioref">Anderson et al. 2014</a>; <a href="#ref-gobler2017" role="doc-biblioref">Gobler et al. 2017</a>; <a href="#ref-seto2019" role="doc-biblioref">Seto, Karp-Boss, and Wells 2019</a>; <a href="#ref-brickman2021" role="doc-biblioref">Brickman et al. 2021</a>; <a href="#ref-pershing2015" role="doc-biblioref">Pershing et al. 2015</a>; <a href="#ref-siedlecki2021" role="doc-biblioref">Siedlecki et al. 2021</a>)</span>. HABs involve an abundance of multiple species of algae that produce toxins or bioactive compounds which often cause the closures of shellfish harvesting to manage the risk of toxin consumption from humans <span class="citation" data-cites="anderson2014 anderson2021 fernandes-salvador2021 davidson2016 grizzle2016">(<a href="#ref-anderson2014" role="doc-biblioref">Anderson et al. 2014</a>; <a href="#ref-anderson2021" role="doc-biblioref">Anderson et al. 2021</a>; <a href="#ref-fernandes-salvador2021" role="doc-biblioref">Fernandes-salvador et al. 2021</a>; <a href="#ref-davidson2016" role="doc-biblioref">Davidson et al. 2016</a>; <a href="#ref-grizzle2016" role="doc-biblioref">Grizzle and Ward 2016</a>)</span>. Toxin level monitoring is often based on mussels as the ideal species since they accumulate toxins quickly, providing early detection of HABs <span class="citation" data-cites="rourke2022 bricelj1998">(<a href="#ref-rourke2022" role="doc-biblioref">Rourke et al. 2022</a>; <a href="#ref-bricelj1998" role="doc-biblioref">Bricelj and Shumway 1998</a>)</span>. While mussels are a good indicator of toxin levels, they may not be appropriate to assume the toxin levels found in other bivalve species as toxin accumulation can vary between species under current environmental conditions by up to 100-fold <span class="citation" data-cites="mafra2010 rourke2022 sauvey">(<a href="#ref-mafra2010" role="doc-biblioref">Mafra, Bricelj, and Fennel 2010</a>; <a href="#ref-rourke2022" role="doc-biblioref">Rourke et al. 2022</a>; <a href="#ref-sauvey" role="doc-biblioref">Sauvey et al., n.d.</a>)</span>. Understanding these species-species differences in toxin accumulation can provide information on how to monitor the locations from which each shellfish species is harvested from rather than applying toxin monitoring from mussels to all shellfish species.</p>
+<p>In addition to HABs, the metabolic rates of shellfish can also be affected by ocean warming and acidification <span class="citation" data-cites="crain2008 kordas2011 kroeker2013 lefevre2016 braga2018">(<a href="#ref-crain2008" role="doc-biblioref">Crain, Kroeker, and Halpern 2008</a>; <a href="#ref-kordas2011" role="doc-biblioref">Kordas, Harley, and O’Connor 2011</a>; <a href="#ref-kroeker2013" role="doc-biblioref">Kroeker et al. 2013</a>; <a href="#ref-lefevre2016" role="doc-biblioref">Lefevre 2016</a>; <a href="#ref-braga2018" role="doc-biblioref">Braga et al. 2018</a>)</span>. Increased temperatures from ocean warming can cause these shellfish to have a higher metabolic demand leading to changes in clearance rates, particle selectivity, growth rate, and detoxification processes <span class="citation" data-cites="anestis2007 oconnor2009 todgham2013 gunderson2016 lowe2017">(<a href="#ref-anestis2007" role="doc-biblioref">Anestis et al. 2007</a>; <a href="#ref-oconnor2009" role="doc-biblioref">O’Connor 2009</a>; <a href="#ref-todgham2013" role="doc-biblioref">Todgham and Stillman 2013</a>; <a href="#ref-gunderson2016" role="doc-biblioref">Gunderson, Armstrong, and Stillman 2016</a>; <a href="#ref-lowe2017" role="doc-biblioref">Lowe et al. 2017</a>)</span>. Coastal acidification can also affect the metabolic rates of shellfish by altering acid base physiology and energy demands <span class="citation" data-cites="portner2004 widdicombe2008 salisbury2011">(<a href="#ref-portner2004" role="doc-biblioref">Portner, Langenbuch, and Reipschlager 2004</a>; <a href="#ref-widdicombe2008" role="doc-biblioref">Widdicombe and Spicer 2008</a>; <a href="#ref-salisbury2011" role="doc-biblioref">Salisbury et al. 2011</a>)</span>. Based on this information, predicted future water conditions are likely to cause significant impacts on feeding selectivity and toxin uptake of commercially important shellfish species <span class="citation" data-cites="braga2018">(<a href="#ref-braga2018" role="doc-biblioref">Braga et al. 2018</a>)</span>.</p>
+<p>To understand and predict the impact of these future water conditions on the shellfish industry in New Hampshire, it is necessary to research the effects of coastal stressors on the feeding behavior, food selectivity, and phycotoxin accumulation processes in commercially important bivalve species. This research was conducted to recognize how species are impacted by predicted changes in water conditions as well as to support the mitigation of negative impacts from HABs on the shellfish industry through the development of management strategies.</p>
+<p>This paper looks at how predicted water temperatures and acidification levels affect metabolic rates, specifically growth, in commercially important shellfish species as part of the overall goal of this research. It is hypothesized that shellfish subjected to either increased temperatures, ocean acidification conditions, or a combination of both, will show less growth than individuals subjected to current summer ambient conditions in New Hampshire. It is also hypothesized that shellfish growth will differ between species.</p>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<section id="experimental-design" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-design">Experimental Design</h3>
+<p>This experiment was conducted at the University of New Hampshire’s Coastal Marine Lab which has a system of aquaria that allows for precise control over partial pressure carbon dioxide (pCO2) and temperature. This system consists of 20 tanks that can be controlled individually to replicate experimental water conditions. For this experiment, four water condition treatments were randomly selected for each tank so that there were five tanks of each treatment in the system <a href="#fig-Tank-assignment" class="quarto-xref">Figure&nbsp;1</a>. These treatments included ambient which was set to the ambient summer conditions of the area (17 degrees C, pH 8.0), ocean warming which was set to four degrees above ambient and pH 8.0 (21 degrees C, pH 8.0), ocean acidification which was set to ambient temperatures and pH 7.5 (17 degrees C, pH 7.5), and multi-stressor which was set to ocean warming temperatures and ocean acidification pH (21 degrees C, pH 7.5). Each tank was split into nine boxes and each box could hold four individuals from the same species. Each column of boxes was randomly designated a species <a href="#fig-Tank-setup" class="quarto-xref">Figure&nbsp;2</a>. These species included Eastern oysters (<em>Crassostrea virginica</em>), Blue mussels (<em>Mytilus edulis</em>), and Atlantic sea scallops (<em>Placopecten magellanicus</em>).</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Tank-assignment" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Tank-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Tank_Layout_Full.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Tank-assignment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Assignment of treatment conditions (Ambient, Warm, Acidification, Multi) for each of the 20 tanks in the system. (Photo: Hannah Gossner)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-Tank-setup" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-Tank-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Tank_Setup_2.png" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-Tank-setup-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Layout of each tank with the nine boxes. Each box was able to hold four individuals. Each column, designated from where the drain is, was randomized for which species they would hold.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Shellfish were collected from local farms to have 240 individuals of each species. These individuals were measured for length (mm), width (mm), and depth (mm) and weighed (g) <span class="citation" data-cites="gimin2004">(<a href="#ref-gimin2004" role="doc-biblioref">Gimin et al. 2004</a>)</span>. Once measured they were placed in their designated tank spaces. Once all shellfish were in their tank spaces, they were subjected to an acclimation period of two weeks with no experimental conditions to adjust to living in the tanks. After that they were subjected to an environmental acclimation period of 28 days with treatment conditions. The shellfish were then subject to a selective feeding period of 6 days and then a depuration period of 10 days where on days 1, 3, 6 and 10 shellfish were removed from tanks to have their tissues collected. On these days the shellfish were measured and weighed wet before tissue sampling. All shellfish measurement and weight data was collected onto an Excel csv file.</p>
+</section>
+<section id="data-cleaning-and-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-cleaning-and-analysis">Data Cleaning and Analysis</h3>
+<p>The measurement and weight data was cleaned and analyzed using R Studio. The measurement and weight Excel file was loaded into R Studio using the readxl package <span class="citation" data-cites="readxl">(<a href="#ref-readxl" role="doc-biblioref">Wickham and Bryan 2025</a>)</span>. Unnecessary columns and data with “NA”s were removed using the dplyr package <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span>. Some of the shellfish died which caused there to be missing data for measurements and weight.</p>
+<p>The change in length, width, depth and weight was calculated for each shellfish and added as a column using the dplyr package <span class="citation" data-cites="dplyr">(<a href="#ref-dplyr" role="doc-biblioref">Wickham et al. 2023</a>)</span>. The changes in measurements and weight compared to species and treatments were then graphed as box plots using the ggplot2 package <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span>.</p>
+<p>The difference between species compared to the measurements and weights was analyzed through one-way ANOVAs <span class="citation" data-cites="stats">(<a href="#ref-stats" role="doc-biblioref">2023</a>)</span>. A post-hoc tukey test was calculated for ANOVAs with significant results <span class="citation" data-cites="stats"> (<a href="#ref-stats" role="doc-biblioref">2023</a>)</span>. The difference between treatment compared the measurements and weights was also analyzed through one-way ANOVAs and post-hoc tukey tests <span class="citation" data-cites="stats"> (<a href="#ref-stats" role="doc-biblioref">2023</a>)</span>.</p>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<section id="change-in-measurements-versus-treatment" class="level3">
+<h3 class="anchored" data-anchor-id="change-in-measurements-versus-treatment">Change in measurements versus treatment</h3>
+<p>The change in shellfish weight (g) was found to have a difference between treatments (F(3, 674) = 2.714, p = 0.044) <a href="#fig-weight-treat" class="quarto-xref">Figure&nbsp;3</a>. This difference in shellfish weight was only apparent between ambient and acidified conditions, where shellfish in ambient conditions had a greater change in weight than shellfish in acidified conditions (p = 0.0586, 95% C.I. = -0.019, 1.58) <a href="#fig-weight-treat" class="quarto-xref">Figure&nbsp;3</a>. Change in shellfish width (mm) was not different between treatments, indicating that change in shellfish width does not correlate with differences in water conditions (F(3, 674) = 1.136, p = 0.334) <a href="#fig-width-treat" class="quarto-xref">Figure&nbsp;4</a>. Change in shellfish length (mm) was also not different between treatments, indicating that change in shellfish length does not correlate with differences in water conditions (F(3, 674) = 1.687, p = 0.168) <a href="#fig-length-treat" class="quarto-xref">Figure&nbsp;5</a>. The change in shellfish depth (mm) was found to have a difference between treatments (F(3, 674) = 2.714, p = 0.044) <a href="#fig-depth-treat" class="quarto-xref">Figure&nbsp;6</a>. This difference in depth was apparent between warm and ambient conditions, where shellfish in ambient conditions had a greater change in depth than shellfish in warm conditions (p = 0.0385, 95% C.I. = -1.46, -0.0269), and between warm and multi conditions, where shellfish in multi conditions had a greater change in depth than shellfish in warm conditions (p = 0.0417, 95% C.I. = -1.44, -0.0185) <a href="#fig-depth-treat" class="quarto-xref">Figure&nbsp;6</a>.</p>
+<p>Overall, shellfish weight from ambient conditions changed more than shellfish in acidified conditions while all other treatments showed no variation between each other <a href="#fig-weight-treat" class="quarto-xref">Figure&nbsp;3</a>. Shellfish depth from ambient and multi conditions changed more than shellfish in warm conditions while acidified conditions showed no variation between the other treatments <a href="#fig-depth-treat" class="quarto-xref">Figure&nbsp;6</a>. Change in shellfish width and length did not vary between treatments <a href="#fig-width-treat" class="quarto-xref">Figure&nbsp;4</a>; <a href="#fig-length-treat" class="quarto-xref">Figure&nbsp;5</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-weight-treat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-weight-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-weight-treat-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weight-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Change in shellfish weight (g) showed a difference between treatments (F(3, 674) = 2.714, p = 0.044). Change in shellfish weight was only different between ambient and acidified conditions (p = 0.0586, 95% C.I. = -0.019, 1.58).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-width-treat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-width-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-width-treat-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-width-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Change in shellfish width (mm) was not different between treatments (Acidified, Ambient, Multi, Warm) (F(3, 674) = 1.136, p = 0.334).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-length-treat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-length-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-length-treat-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-length-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Change in shellfish length (mm) was not different between treatments (Acidified, Ambient, Multi, Warm) (F(3, 674) = 1.687, p = 0.168).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-depth-treat" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-depth-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-depth-treat-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-depth-treat-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Change in shellfish depth (mm) showed a difference between treatments (F(3, 674) = 2.714, p = 0.044). Change in shellfish depth was different between warm and ambient conditions (p = 0.0385, 95% C.I. = -1.46, -0.0269) and between warm and multi conditions (p = 0.0417, 95% C.I. = -1.44, -0.0185).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="change-in-measurements-versus-species" class="level3">
+<h3 class="anchored" data-anchor-id="change-in-measurements-versus-species">Change in measurements versus species</h3>
+<p>The change in shellfish weight (g) was found to have a difference between species (F(2, 675) = 186.9, p = &lt;2e-16) <a href="#fig-weight-species" class="quarto-xref">Figure&nbsp;7</a>. This difference in weight was apparent between oysters and mussels, with mussels having a greater change in weight than oysters (p = 1.52e-05, 95% C.I. = -1.47, -0.477), scallops and mussels, with mussels having a greater change in weight than scallops (p = 0.00e+00, 95% C.I. = -4.56, -3.54), and scallops and oysters, with oysters having a greater change in weight than scallops (p = 0.00e+00, 95% C.I. = -3.59, -2.56) <a href="#fig-weight-species" class="quarto-xref">Figure&nbsp;7</a>. Change in shellfish width (mm) was found to have a difference between species (F(2, 675) = 78.85, p = &lt;2e-16) <a href="#fig-width-species" class="quarto-xref">Figure&nbsp;8</a>. This difference in width was apparent between oysters and mussels, with mussels having a greater change in width than oysters (p = 5e-07, 95% C.I. = -2.32, -0.897), scallops and mussels, with scallops having a greater change in width than mussels (p = 0.00e+00, 95% C.I. = 1.56, 3.02), and scallops and oysters, with scallops having a greater change in width than oysters (p = 0.00e+00, 95% C.I. = 3.17, 4.64) <a href="#fig-width-species" class="quarto-xref">Figure&nbsp;8</a>. Change in shellfish length (mm) was not different between species, indicating that change in shellfish length does not correlate with species (Mussels, Oysters, Scallops) (F(2, 675) = 0.627, p = 0.535) <a href="#fig-length-species" class="quarto-xref">Figure&nbsp;9</a>. Change in shellfish depth (mm) was found to have a difference between species (F(2, 675) = 6.182, p = 0.00219) <a href="#fig-depth-species" class="quarto-xref">Figure&nbsp;10</a>. This difference in depth was apparent between oysters and mussels, with oysters having a greater change in depth than mussels (p = 0.00827, 95% C.I. = 0.15, 1.26) and scallops and mussels, with scallops having a greater change in depth than mussels (p = 0.00609, 95% C.I. = 0.177, 1.31) <a href="#fig-depth-species" class="quarto-xref">Figure&nbsp;10</a>.</p>
+<p>Overall, mussel weight changed the most after treatments while scallops had the least amount of change in weight <a href="#fig-weight-species" class="quarto-xref">Figure&nbsp;7</a>. Scallop width changed the most after treatments while oysters had the least amount of change in width <a href="#fig-width-species" class="quarto-xref">Figure&nbsp;8</a>. Oyster and scallop depth changed the most after treatments than mussels <a href="#fig-depth-species" class="quarto-xref">Figure&nbsp;10</a>. Change in shellfish length did not vary between species <a href="#fig-length-species" class="quarto-xref">Figure&nbsp;9</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-weight-species" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-weight-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-weight-species-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weight-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Change in shellfish weight (g) showed a difference between species (F(2, 675) = 186.9, p = &lt;2e-16). Change in shellfish weight was different between oysters and mussels (p = 1.52e-05, 95% C.I. = -1.47, -0.477), scallops and mussels (p = 0.00e+00, 95% C.I. = -4.56, -3.54), and scallops and oysters (p = 0.00e+00, 95% C.I. = -3.59, -2.56).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-width-species" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-width-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-width-species-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-width-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Change in shellfish width (mm) showed a difference between species (F(2, 675) = 78.85, p = &lt;2e-16). Change in shellfish width was different between oysters and mussels (p = 5e-07, 95% C.I. = -2.32, -0.897), scallops and mussels (p = 0.00e+00, 95% C.I. = 1.56, 3.02), and scallops and oysters (p = 0.00e+00, 95% C.I. = 3.17, 4.64).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-length-species" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-length-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-length-species-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-length-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Change in shellfish length (mm) was not different between species (Mussels, Oysters, Scallops) (F(2, 675) = 0.627, p = 0.535).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-depth-species" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-depth-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Final_Project_Biotoxin_Data_files/figure-html/fig-depth-species-1.png" class="img-fluid figure-img" width="1152">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-depth-species-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Change in shellfish depth (mm) showed a difference between species (F(2, 675) = 6.182, p = 0.00219). Change in shellfish depth was different between oysters and mussels (p = 0.00827, 95% C.I. = 0.15, 1.26) and scallops and mussels (p = 0.00609, 95% C.I. = 0.177, 1.31).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>Discussion</h1>
+<p>This results of this study demonstrate that shellfish growth depends on ocean conditions and differs between species. Shellfish exposed to acidified, warm, and multi-stressor conditions grew less than shellfish exposed to ambient conditions specifically for weight and depth. In addition to this, shellfish growth showed species-species differences in weight, width, and depth. These differences in growth between treatments as well as species-species differences are likely due to tolerances of ocean conditions.</p>
+<p>Oysters are highly tolerant to a broad spectrum of temperatures, particularly high water temperatures which can stimulate growth; however, too high of temperatures limits growth <span class="citation" data-cites="rybovich2016 lowe2017">(<a href="#ref-rybovich2016" role="doc-biblioref">Rybovich et al. 2016</a>; <a href="#ref-lowe2017" role="doc-biblioref">Lowe et al. 2017</a>)</span>. There have been limited studies on the growth of oysters in relation to ocean warming and acidification making it difficult to compare results. Despite the lack of research for oysters, previous studies have found changes in the growth of scallops <span class="citation" data-cites="lagos2016">(<a href="#ref-lagos2016" role="doc-biblioref">Lagos et al. 2016</a>)</span>. In the study by Lagos et al., scallop weight decreased with high temperature conditions, depth decreased with high temperature, acidified, and multi-stressor conditions, and length decreased with high temperature and acidified conditions <span class="citation" data-cites="lagos2016">(<a href="#ref-lagos2016" role="doc-biblioref">Lagos et al. 2016</a>)</span>. Previous studies have also looked at mussel growth but found no significant reduction in growth of individuals subjected to acidified and high temperature conditions; however, they have shown changes in shape, becoming rounder and flatter, as well as changes in shell thickness, becoming thinner <span class="citation" data-cites="fitzer2015">(<a href="#ref-fitzer2015" role="doc-biblioref">Fitzer et al. 2015</a>)</span>. This information appears to be consistent with the results of this study; however, this study found changes in mussel growth unlike Fitzer et al.; however, they used different growth metrics <span class="citation" data-cites="fitzer2015">(<a href="#ref-fitzer2015" role="doc-biblioref">Fitzer et al. 2015</a>)</span>.</p>
+<p>Limitations in this study must be considered as they may have affected the results. One limitation was from the deaths of a few shellfish from each species before they could be measured again. These individuals were removed from the data sheet because their change in growth could not be calculated; however, this changed the sample sizes of each species and for each treatment. In addition to sample sizes, the measured values for length, width, and depth could have error due to some of the digital calipers breaking during the experiment. A limitation not related to experimental data collection but rather with design would be that this study was conducted within a lab to have controlled conditions instead of being conducted in the species’ wild habitat. There could be other factors not accounted for in the lab that would influence shellfish growth in the wild.</p>
+<p>Despite these limitations, the results found from this study are vital to the overall goal this study is a part of. The growth of shellfish between species and treatments will help researchers and management understand how the effects of climate change are affecting commercially important shellfish. This understanding will be helpful for developing management strategies for shellfish harvesting and aquaculture. Continued research is also important to further understand the species-species differences in growth which there is a lack in collective research on.</p>
+</section>
+<section id="bibliography" class="level1 unnumbered">
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Bibliography</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-anderson2021" class="csl-entry" role="listitem">
+Anderson, Donald M., Elizabeth Fensin, Christopher J. Gobler, Alicia E. Hoeglund, Katherine A. Hubbard, David M. Kulis, Jan H. Landsberg, et al. 2021. <span>“Marine harmful algal blooms (HABs) in the United States: History, current status and future trends.”</span> <em>Harmful Algae</em> 102 (February): 101975. <a href="https://doi.org/10.1016/j.hal.2021.101975">https://doi.org/10.1016/j.hal.2021.101975</a>.
+</div>
+<div id="ref-anderson2014" class="csl-entry" role="listitem">
+Anderson, Donald M., Bruce A. Keafer, Judith L. Kleindinst, Dennis J. McGillicuddy, Jennifer L. Martin, Kerry Norton, Cynthia H. Pilskaln, Juliette L. Smith, Christopher R. Sherwood, and Bradford Butman. 2014. <span>“Alexandrium Fundyense Cysts in the Gulf of Maine: Long-Term Time Series of Abundance and Distribution, and Linkages to Past and Future Blooms.”</span> <em>Deep-Sea Research. Part II, Topical Studies in Oceanography</em> 103 (May): 6–26. <a href="https://doi.org/10.1016/j.dsr2.2013.10.002">https://doi.org/10.1016/j.dsr2.2013.10.002</a>.
+</div>
+<div id="ref-anestis2007" class="csl-entry" role="listitem">
+Anestis, Andreas, Antigone Lazou, Hans O. Pörtner, and Basile Michaelidis. 2007. <span>“Behavioral, metabolic, and molecular stress responses of marine bivalve Mytilus galloprovincialis during long-term acclimation at increasing ambient temperature.”</span> <em>American Journal of Physiology. Regulatory, Integrative and Comparative Physiology</em> 293 (2): R911–921. <a href="https://doi.org/10.1152/ajpregu.00124.2007">https://doi.org/10.1152/ajpregu.00124.2007</a>.
+</div>
+<div id="ref-braga2018" class="csl-entry" role="listitem">
+Braga, Ana C., Carolina Camacho, António Marques, Ana Gago-Martínez, Mário Pacheco, and Pedro R. Costa. 2018. <span>“Combined Effects of Warming and Acidification on Accumulation and Elimination Dynamics of Paralytic Shellfish Toxins in Mussels <span><em>Mytilus Galloprovincialis</em></span>.”</span> <em>Environmental Research</em> 164 (July): 647–54. <a href="https://doi.org/10.1016/j.envres.2018.03.045">https://doi.org/10.1016/j.envres.2018.03.045</a>.
+</div>
+<div id="ref-bricelj1998" class="csl-entry" role="listitem">
+Bricelj, V. Monica, and Sandra E. Shumway. 1998. <span>“Paralytic Shellfish Toxins in Bivalve Molluscs: Occurrence, Transfer Kinetics, and Biotransformation.”</span> <em>Reviews in Fisheries Science</em> 6 (4): 315–83. <a href="https://doi.org/10.1080/10641269891314294">https://doi.org/10.1080/10641269891314294</a>.
+</div>
+<div id="ref-brickman2021" class="csl-entry" role="listitem">
+Brickman, Dave, Michael A. Alexander, Andrew Pershing, James D. Scott, and Zeliang Wang. 2021. <span>“Projections of Physical Conditions in the Gulf of Maine in 2050.”</span> <em>Elementa: Science of the Anthropocene</em> 9 (1): 00055. <a href="https://doi.org/10.1525/elementa.2020.20.00055">https://doi.org/10.1525/elementa.2020.20.00055</a>.
+</div>
+<div id="ref-coen2007" class="csl-entry" role="listitem">
+Coen, L. D., Robert D. Brumbaugh, David Bushek, Ray Grizzle, M. W. Luckenbach, M. H. Posey, Sean P. Powers, and S. Gregory Tolley. 2007. <span>“Ecosystem Services Related to Oyster Restoration.”</span> <em>Marine Ecology Progress Series</em> 341 (July): 303–7. <a href="https://doi.org/10.3354/meps341303">https://doi.org/10.3354/meps341303</a>.
+</div>
+<div id="ref-crain2008" class="csl-entry" role="listitem">
+Crain, Caitlin Mullan, Kristy Kroeker, and Benjamin S. Halpern. 2008. <span>“Interactive and cumulative effects of multiple human stressors in marine systems.”</span> <em>Ecology Letters</em> 11 (12): 1304–15. <a href="https://doi.org/10.1111/j.1461-0248.2008.01253.x">https://doi.org/10.1111/j.1461-0248.2008.01253.x</a>.
+</div>
+<div id="ref-davidson2016" class="csl-entry" role="listitem">
+Davidson, Keith, Donald M. Anderson, Manuel Mateus, Beatrice Reguera, Joe Silke, Marc Sourisseau, and Julie Maguire. 2016. <span>“FORECASTING THE RISK OF HARMFUL ALGAL BLOOMS: PREFACE TO THE ASIMUTH SPECIAL ISSUE.”</span> <em>Harmful Algae</em> 53 (March): 1–7. <a href="https://doi.org/10.1016/j.hal.2015.11.005">https://doi.org/10.1016/j.hal.2015.11.005</a>.
+</div>
+<div id="ref-fernandes-salvador2021" class="csl-entry" role="listitem">
+Fernandes-salvador, Jose A., Keith Davidson, Marc Sourisseau, Marta Revilla, Wiebke Schmidt, Dave Clarke, Peter I. Miller, et al. 2021. <span>“Current Status of Forecasting Toxic Harmful Algae for the North-East Atlantic Shellfish Aquaculture Industry.”</span> <em>Frontiers in Marine Science</em> 8 (666583). <a href="https://doi.org/10.3389/fmars.2021.666583">https://doi.org/10.3389/fmars.2021.666583</a>.
+</div>
+<div id="ref-fisheries2025" class="csl-entry" role="listitem">
+Fisheries, NOAA. 2025. <span>“Fisheries of the United States Reports | NOAA Fisheries.”</span> <a href="https://www.fisheries.noaa.gov/resource/document/fisheries-united-states-reports">https://www.fisheries.noaa.gov/resource/document/fisheries-united-states-reports</a>.
+</div>
+<div id="ref-fitzer2015" class="csl-entry" role="listitem">
+Fitzer, Susan C., Liberty Vittert, Adrian Bowman, Nicholas A. Kamenos, Vernon R. Phoenix, and Maggie Cusack. 2015. <span>“Ocean Acidification and Temperature Increase Impact Mussel Shell Shape and Thickness: Problematic for Protection?”</span> <em>Ecology and Evolution</em> 5 (21): 4875–84. <a href="https://doi.org/10.1002/ece3.1756">https://doi.org/10.1002/ece3.1756</a>.
+</div>
+<div id="ref-gimin2004" class="csl-entry" role="listitem">
+Gimin, R, R Mohan, L. V. Thinh, and A. D. Griffiths. 2004. <span>“The Relationship of Shell Dimensions and Shell Volume to Live Weight and Soft Tissue Weight in the Mangrove Clam, Polymesoda Erosa (Solander, 1786) from Northern Australia.”</span> <em>NAGA, WorldFish Center Quarterly</em> 27 (3 &amp; 4): 32–35.
+</div>
+<div id="ref-gobler2017" class="csl-entry" role="listitem">
+Gobler, Christopher J., Owen M. Doherty, Theresa K. Hattenrath-Lehmann, Andrew W. Griffith, Yoonja Kang, and R. Wayne Litaker. 2017. <span>“Ocean warming since 1982 has expanded the niche of toxic algal blooms in the North Atlantic and North Pacific oceans.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 114 (19): 4975–80. <a href="https://doi.org/10.1073/pnas.1619575114">https://doi.org/10.1073/pnas.1619575114</a>.
+</div>
+<div id="ref-grattan2016" class="csl-entry" role="listitem">
+Grattan, Lynn M., Sailor Holobaugh, and J. Glenn Morris. 2016. <span>“Harmful Algal Blooms and Public Health.”</span> <em>Harmful Algae</em>, Harmful algal blooms and public health, 57 (July): 2–8. <a href="https://doi.org/10.1016/j.hal.2016.05.003">https://doi.org/10.1016/j.hal.2016.05.003</a>.
+</div>
+<div id="ref-grizzle2016" class="csl-entry" role="listitem">
+Grizzle, Raymond, and Krystin Ward. 2016. <span>“Assessment of Recent Eastern Oyster (Crassostrea Virginica) Reef Restoration Projects in the Great Bay Estuary, New Hampshire: Planning for the Future.”</span> <em>PREP Reports &amp; Publications</em>, April. <a href="https://scholars.unh.edu/prep/353">https://scholars.unh.edu/prep/353</a>.
+</div>
+<div id="ref-gunderson2016" class="csl-entry" role="listitem">
+Gunderson, Alex R., Eric J. Armstrong, and Jonathon H. Stillman. 2016. <span>“Multiple Stressors in a Changing World: The Need for an Improved Perspective on Physiological Responses to the Dynamic Marine Environment.”</span> <em>Annual Review of Marine Science</em> 8: 357–78. <a href="https://doi.org/10.1146/annurev-marine-122414-033953">https://doi.org/10.1146/annurev-marine-122414-033953</a>.
+</div>
+<div id="ref-hégaret2008" class="csl-entry" role="listitem">
+Hégaret, Hélène, Sandra Shumway, Gary Wikfors, Susan Pate, and Joann Burkholder. 2008. <span>“Potential Transport of Harmful Algae via Relocation of Bivalve Molluscs.”</span> <em>Marine Ecology-Progress Series - MAR ECOL-PROGR SER</em> 361 (June): 169–79. <a href="https://doi.org/10.3354/meps07375">https://doi.org/10.3354/meps07375</a>.
+</div>
+<div id="ref-kordas2011" class="csl-entry" role="listitem">
+Kordas, Rebecca L., Christopher D. G. Harley, and Mary I. O’Connor. 2011. <span>“Community Ecology in a Warming World: The Influence of Temperature on Interspecific Interactions in Marine Systems.”</span> <em>Journal of Experimental Marine Biology and Ecology</em>, Global change in marine ecosystems, 400 (1): 218–26. <a href="https://doi.org/10.1016/j.jembe.2011.02.029">https://doi.org/10.1016/j.jembe.2011.02.029</a>.
+</div>
+<div id="ref-kroeker2013" class="csl-entry" role="listitem">
+Kroeker, Kristy J., Rebecca L. Kordas, Ryan Crim, Iris E. Hendriks, Laura Ramajo, Gerald S. Singh, Carlos M. Duarte, and Jean-Pierre Gattuso. 2013. <span>“Impacts of ocean acidification on marine organisms: quantifying sensitivities and interaction with warming.”</span> <em>Global Change Biology</em> 19 (6): 1884–96. <a href="https://doi.org/10.1111/gcb.12179">https://doi.org/10.1111/gcb.12179</a>.
+</div>
+<div id="ref-lagos2016" class="csl-entry" role="listitem">
+Lagos, Nelson A., Samanta Benítez, C. M. Duarte, Marco A. Lardies, Bernardo R. Broitman, Christian Tapia, Pamela Tapia, Steve Widdicombe, and Cristian A. Vargas. 2016. <span>“Effects of Temperature and Ocean Acidification on Shell Characteristics of Argopecten Purpuratus: Implications for Scallop Aquaculture in an Upwelling-Influenced Area.”</span> <em>Aquaculture Environment Interactions</em> 8 (May): 357–70. <a href="https://doi.org/10.3354/aei00183">https://doi.org/10.3354/aei00183</a>.
+</div>
+<div id="ref-lefevre2016" class="csl-entry" role="listitem">
+Lefevre, Sjannie. 2016. <span>“Are global warming and ocean acidification conspiring against marine ectotherms? A meta-analysis of the respiratory effects of elevated temperature, high CO2 and their interaction.”</span> <em>Conservation Physiology</em> 4 (1): cow009. <a href="https://doi.org/10.1093/conphys/cow009">https://doi.org/10.1093/conphys/cow009</a>.
+</div>
+<div id="ref-lowe2017" class="csl-entry" role="listitem">
+Lowe, Michael R., Troy Sehlinger, Thomas M. Soniat, and Megan K. La Peyre. 2017. <span>“Interactive Effects of Water Temperature and Salinity on Growth and Mortality of Eastern Oysters, Crassostrea Virginica: A Meta-Analysis Using 40 Years of Monitoring Data.”</span> <em>Journal of Shellfish Research</em> 36 (3): 683–97. <a href="https://doi.org/10.2983/035.036.0318">https://doi.org/10.2983/035.036.0318</a>.
+</div>
+<div id="ref-mafra2010" class="csl-entry" role="listitem">
+Mafra, Luiz L., V. Monica Bricelj, and Katja Fennel. 2010. <span>“Domoic Acid Uptake and Elimination Kinetics in Oysters and Mussels in Relation to Body Size and Anatomical Distribution of Toxin.”</span> <em>Aquatic Toxicology</em> 100 (1): 17–29. <a href="https://doi.org/10.1016/j.aquatox.2010.07.002">https://doi.org/10.1016/j.aquatox.2010.07.002</a>.
+</div>
+<div id="ref-oconnor2009" class="csl-entry" role="listitem">
+O’Connor, Mary I. 2009. <span>“Warming strengthens an herbivore-plant interaction.”</span> <em>Ecology</em> 90 (2): 388–98. <a href="https://doi.org/10.1890/08-0034.1">https://doi.org/10.1890/08-0034.1</a>.
+</div>
+<div id="ref-pershing2015" class="csl-entry" role="listitem">
+Pershing, Andrew J., Michael A. Alexander, Christina M. Hernandez, Lisa A. Kerr, Arnault Le Bris, Katherine E. Mills, Janet A. Nye, et al. 2015. <span>“Slow adaptation in the face of rapid warming leads to collapse of the Gulf of Maine cod fishery.”</span> <em>Science (New York, N.Y.)</em> 350 (6262): 809–12. <a href="https://doi.org/10.1126/science.aac9819">https://doi.org/10.1126/science.aac9819</a>.
+</div>
+<div id="ref-portner2004" class="csl-entry" role="listitem">
+Portner, Hans-Otto, Martina Langenbuch, and Anke Reipschlager. 2004. <span>“Biological Impact of Elevated Ocean CO2 Concentrations: Lessons from Animal Physiology and Earth History.”</span> <em>Journal of Oceanography</em> 60 (4): 705–18. <a href="https://doi.org/10.1007/S10872-004-5763-0">https://doi.org/10.1007/S10872-004-5763-0</a>.
+</div>
+<div id="ref-stats" class="csl-entry" role="listitem">
+R Core Team. 2023. <span>“R: A Language and Environment for Statistical Computing.”</span> <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+</div>
+<div id="ref-rourke2022" class="csl-entry" role="listitem">
+Rourke, Meaghan L., Ashley M. Fowler, Julian M. Hughes, Matt K. Broadhurst, Joseph D. DiBattista, Stewart Fielder, Jackson Wilkes Walburn, and Elise M Furlan. 2022. <span>“Environmental DNA (eDNA) as a Tool for Assessing Fish Biomass: A Review of Approaches and Future Considerations for Resource Surveys.”</span> <em>Environmental DNA</em> 4 (1): 9–33. <a href="https://doi.org/10.1002/edn3.185">https://doi.org/10.1002/edn3.185</a>.
+</div>
+<div id="ref-rybovich2016" class="csl-entry" role="listitem">
+Rybovich, Molly, Megan K. La Peyre, Steven G. Hall, and Jerome F. La Peyre. 2016. <span>“Increased Temperatures Combined with Lowered Salinities Differentially Impact Oyster Size Class Growth and Mortality.”</span> <em>Journal of Shellfish Research</em> 35 (1): 101–13. <a href="https://doi.org/10.2983/035.035.0112">https://doi.org/10.2983/035.035.0112</a>.
+</div>
+<div id="ref-salisbury2011" class="csl-entry" role="listitem">
+Salisbury, Joseph, Mark Green, Chris Hunt, and Janet Campbell. 2011. <span>“Coastal Acidification by Rivers:a Threat to Shellfish? - Salisbury - 2008 - Eos, Transactions American Geophysical Union - Wiley Online Library.”</span> <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2008EO500001">https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2008EO500001</a>.
+</div>
+<div id="ref-sauvey" class="csl-entry" role="listitem">
+Sauvey, Aurore, Francoise Denis, Helene Hegaret, Bertrand Le Roy, Christophe Lelong, Orianne Jolly, Marie Pavie, and Juliette Fauchot. n.d. <span>“Interactions Between Filter-Feeding Bivalves and Toxic Diatoms: Influence on the Feeding Behavior of Crassostrea Gigas and Pecten Maximus and on Toxin Production by Pseudo-Nitzschia.”</span> <a href="https://www.researchgate.net/publication/354014431_Interactions_between_Filter-Feeding_Bivalves_and_Toxic_Diatoms_Influence_on_the_Feeding_Behavior_of_Crassostrea_gigas_and_Pecten_maximus_and_on_Toxin_Production_by_Pseudo-nitzschia">https://www.researchgate.net/publication/354014431_Interactions_between_Filter-Feeding_Bivalves_and_Toxic_Diatoms_Influence_on_the_Feeding_Behavior_of_Crassostrea_gigas_and_Pecten_maximus_and_on_Toxin_Production_by_Pseudo-nitzschia</a>.
+</div>
+<div id="ref-vanderschatteolivier2020" class="csl-entry" role="listitem">
+Schatte Olivier, Andrew van der, Laurence Jones, Lewis Le Vay, Michael Christie, James Wilson, and Shelagh K. Malham. 2020. <span>“A Global Review of the Ecosystem Services Provided by Bivalve Aquaculture.”</span> <em>Reviews in Aquaculture</em> 12 (1): 3–25. <a href="https://doi.org/10.1111/raq.12301">https://doi.org/10.1111/raq.12301</a>.
+</div>
+<div id="ref-seto2019" class="csl-entry" role="listitem">
+Seto, Drajad S., Lee Karp-Boss, and Mark L. Wells. 2019. <span>“Effects of Increasing Temperature and Acidification on the Growth and Competitive Success of <span><em>Alexandrium Catenella</em></span> from the Gulf of Maine.”</span> <em>Harmful Algae</em> 89 (November): 101670. <a href="https://doi.org/10.1016/j.hal.2019.101670">https://doi.org/10.1016/j.hal.2019.101670</a>.
+</div>
+<div id="ref-shumway1990" class="csl-entry" role="listitem">
+Shumway, Sandra E. 1990. <span>“A Review of the Effects of Algal Blooms on Shellfish and Aquaculture.”</span> <em>Journal of the World Aquaculture Society</em> 21 (2): 65–104. <a href="https://doi.org/10.1111/j.1749-7345.1990.tb00529.x">https://doi.org/10.1111/j.1749-7345.1990.tb00529.x</a>.
+</div>
+<div id="ref-siedlecki2021" class="csl-entry" role="listitem">
+Siedlecki, SA, J Salisbury, DK Gledhill, C Bastidas, S Meseck, K McGarry, CW Hunt, et al. 2021. <span>“Projecting Ocean Acidification Impacts for the Gulf of Maine to 2050: New Tools and Expectations.”</span> <em>Elementa: Science of the Anthropocene</em> 9 (1): 00062. <a href="https://doi.org/10.1525/elementa.2020.00062">https://doi.org/10.1525/elementa.2020.00062</a>.
+</div>
+<div id="ref-todgham2013" class="csl-entry" role="listitem">
+Todgham, Anne E., and Jonathon H. Stillman. 2013. <span>“Physiological responses to shifts in multiple environmental stressors: relevance in a changing world.”</span> <em>Integrative and Comparative Biology</em> 53 (4): 539–44. <a href="https://doi.org/10.1093/icb/ict086">https://doi.org/10.1093/icb/ict086</a>.
+</div>
+<div id="ref-vaughn2018" class="csl-entry" role="listitem">
+Vaughn, Caryn C., and Timothy J. Hoellein. 2018. <span>“Bivalve Impacts in Freshwater and Marine Ecosystems.”</span> <em>Annual Review of Ecology, Evolution, and Systematics</em> 49 (Volume 49, 2018): 183–208. <a href="https://doi.org/10.1146/annurev-ecolsys-110617-062703">https://doi.org/10.1146/annurev-ecolsys-110617-062703</a>.
+</div>
+<div id="ref-ggplot2" class="csl-entry" role="listitem">
+Wickham, Hadley. 2016. <span>“Ggplot2: Elegant Graphics for Data Analysis.”</span> <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
+</div>
+<div id="ref-readxl" class="csl-entry" role="listitem">
+Wickham, Hadley, and Jennifer Bryan. 2025. <span>“Readxl: Read Excel Files.”</span> <a href="https://CRAN.R-project.org/package=readxl">https://CRAN.R-project.org/package=readxl</a>.
+</div>
+<div id="ref-dplyr" class="csl-entry" role="listitem">
+Wickham, Hadley, Romain François, Lionel Henry, Kirill Müller, and Davis Vaughan. 2023. <span>“Dplyr: A Grammar of Data Manipulation.”</span> <a href="https://CRAN.R-project.org/package=dplyr">https://CRAN.R-project.org/package=dplyr</a>.
+</div>
+<div id="ref-widdicombe2008" class="csl-entry" role="listitem">
+Widdicombe, Stephen, and John I. Spicer. 2008. <span>“Predicting the Impact of Ocean Acidification on Benthic Biodiversity: What Can Animal Physiology Tell Us?”</span> <em>Journal of Experimental Marine Biology and Ecology</em>, Marine ecology: A tribute to the life and work of john s. gray, 366 (1): 187–97. <a href="https://doi.org/10.1016/j.jembe.2008.07.024">https://doi.org/10.1016/j.jembe.2008.07.024</a>.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
