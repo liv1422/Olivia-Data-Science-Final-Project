@@ -29,6 +29,7 @@ This experiment was conducted at the University of New Hampshire's Coastal Marin
 #| echo: false 
 #| warning: false 
 #| label: fig-Tank-assignment 
+#| fig-pos: 'H'
 #| fig-cap: "Assignment of treatment conditions (Ambient, Warm, Acidification, Multi) for each of the 20 tanks in the system. (Photo: Hannah Gossner)"
 #| out.width: "80%"   
 
@@ -40,7 +41,8 @@ include_graphics("C:/Users/Liv/OneDrive - USNH/Desktop/BIOL 806 Data Science/Bio
 ```{r}
 #| echo: false 
 #| warning: false 
-#| label: fig-Tank-setup 
+#| label: fig-Tank-setup
+#| fig-pos: 'H' 
 #| fig-cap: "Layout of each tank with the nine boxes. Each box was able to hold four individuals. Each column, designated from where the drain is, was randomized for which species they would hold."  
 #| out.width: "80%"  
 
